@@ -1,0 +1,40 @@
+body { background:#0b132b;color:white;font-family:sans-serif;text-align:center; }
+
+#board {
+  display:grid;
+  grid-template-columns:repeat(10,60px);
+  gap:4px;
+  justify-content:center;
+  margin:20px;
+}
+
+.cell {
+  width:60px;height:60px;
+  background:#1c2541;
+  border-radius:6px;
+  font-size:10px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+}
+
+.red { background:#ff4d4d; }
+.blue { background:#3fa9f5; }
+
+#hands div {
+  margin:10px;
+}
+
+.card {
+  display:inline-block;
+  padding:6px 10px;
+  background:#222;
+  margin:4px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.selected { border:2px solid yellow; }
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
